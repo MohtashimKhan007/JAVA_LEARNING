@@ -1,9 +1,9 @@
-public class demo {
+public class demo3 {
     public static void main(String[] args) {
-        int b = 24;
-        short a = b;
+        // int b = 24;
+        // short a = b;
         // this will give error cannot convert int to short 
-        System.out.println(a);
+        // System.out.println(a);
           
 
         // IMPLICIT conversion 
@@ -11,7 +11,7 @@ public class demo {
         // Think like we can store small thing into some bigger thing
 
 
-        short a = 10;
+        short a = 100;
         int b = a;
         System.out.println(b);
 
@@ -21,18 +21,18 @@ public class demo {
         // TRUNCATING conversion 
         // this is truncating conversion we are converting float to int. converting from float or double to integer is called truncating conversion
 
-        float f = 7.546f;
-        int i;
-        i=(int)f;
-        System.out.println(i);
+        // float f = 7.546f;
+        // int i;
+        // i=(int)f;
+        // System.out.println(i);
 
 
 
         // EXPLICIT conversion -> in explicit conversion we store bigger data value into the smaller data value. we cannot do it automatically
         // we have to do it explicitly by the help of the casting
-        int i= 300;
-        byte b = (byte)i;
-        System.out.println(b);
+        // int i= 300;
+        // byte b = (byte)i;
+        // System.out.println(b);
          
 
         // OUTPUT -> 44
