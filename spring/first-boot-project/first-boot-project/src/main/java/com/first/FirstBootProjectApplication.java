@@ -2,8 +2,11 @@ package com.first;
 
 import org.springframework.boot.SpringApplication;
 import org.springframework.boot.autoconfigure.SpringBootApplication;
+import org.springframework.context.annotation.ComponentScan;
 
-@SpringBootApplication  // this is the combination of configuration, componentScan,
+@SpringBootApplication  // this is the combination of configuration, componentScan->Scan the Root
+//Package in this Case com.first is the root package ,enableAutoconfiguration
+@ComponentScan(basePackages = {"com.first","pack"})
 public class FirstBootProjectApplication {
 
 	public static void main(String[] args) {

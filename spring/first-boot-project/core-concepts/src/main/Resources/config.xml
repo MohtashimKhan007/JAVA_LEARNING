@@ -1,0 +1,23 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<beans xmlns="http://www.springframework.org/schema/beans"
+       xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance"
+       xsi:schemaLocation="
+        http://www.springframework.org/schema/beans http://www.springframework.org/schema/beans/spring-beans.xsd">
+
+    <!-- bean definitions here -->
+    // after main code came here -> create the obj of engine and car
+    <bean id="e" class="com.core.concepts.engine">
+
+    </bean>
+
+    <bean id="car" class="com.core.concepts.car">
+<!--        information for injection -->
+<!--        property tag means ->  when you create car
+object so  what you have to do you have to set the engine
+ e there -> and this is called setter injection -->
+        <property name="e" ref="e"  />
+    </bean>
+
+
+
+</beans>
