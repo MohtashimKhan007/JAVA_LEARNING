@@ -7,7 +7,7 @@ public class app {
     public static void main(String[] args){
         ApplicationContext container = new ClassPathXmlApplicationContext("config.xml");
 
-        engine e1=  container.getBean("e",engine.class);
+        Engine e1=  container.getBean("e", Engine.class);
         e1.startEngine();
     }
 }

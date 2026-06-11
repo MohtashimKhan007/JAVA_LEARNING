@@ -1,15 +1,15 @@
 package com.core.concepts;
 
-public class car {
-    private engine e;
+public class Car {
+    private Engine e;
 
     // Galat: public class getengine() { ... }
     // Sahi: ye ek 'method' hai, 'class' nahi.
-    public engine getEngine() {
+    public Engine getEngine() {
         return e;
     }
 
-    public void setEngine(engine e) {
+    public void setEngine(Engine e) {
         this.e = e;
     }
 

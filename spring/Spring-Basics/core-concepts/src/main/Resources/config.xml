@@ -1,0 +1,20 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<beans xmlns="http://www.springframework.org/schema/beans"
+       xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance"
+       xsi:schemaLocation="
+        http://www.springframework.org/schema/beans http://www.springframework.org/schema/beans/spring-beans.xsd">
+
+
+
+    <bean id="e" class="com.core.concepts.Engine">
+
+    </bean>
+
+    <bean id="car" class="com.core.concepts.Car">
+
+        <property name="engine" ref="e"  />
+    </bean>
+
+
+
+</beans>

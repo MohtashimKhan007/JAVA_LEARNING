@@ -1,0 +1,210 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<project version="4">
+  <component name="AutoImportSettings">
+    <option name="autoReloadType" value="SELECTIVE" />
+  </component>
+  <component name="ChangeListManager">
+    <list default="true" id="9c215ebc-a3b2-4d58-8e88-e0c5536f0b12" name="Changes" comment="">
+      <change beforePath="$PROJECT_DIR$/../../Spring notes.docx" beforeDir="false" afterPath="$PROJECT_DIR$/../../Spring notes.docx" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/../.idea/.gitignore" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../.idea/compiler.xml" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../.idea/encodings.xml" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../.idea/first-boot-project.iml" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../.idea/jarRepositories.xml" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../.idea/misc.xml" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../.idea/modules.xml" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../.idea/vcs.xml" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/.gitignore" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/.idea/.gitignore" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/.idea/encodings.xml" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/.idea/misc.xml" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/.idea/vcs.xml" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/pom.xml" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/Resources/config.xml" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/Main.java" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/com/core/concepts/app.java" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/com/core/concepts/car.java" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/com/core/concepts/engine.java" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../first-boot-project/.gitattributes" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../first-boot-project/.gitignore" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../first-boot-project/.mvn/wrapper/maven-wrapper.properties" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../first-boot-project/core-concepts/.gitignore" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../first-boot-project/core-concepts/pom.xml" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../first-boot-project/mvnw" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../first-boot-project/mvnw.cmd" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../first-boot-project/pom.xml" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../first-boot-project/src/main/java/com/first/FirstBootProjectApplication.java" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../first-boot-project/src/main/java/com/first/controller/HomeController.java" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../first-boot-project/src/main/java/com/first/controller/PageController.java" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../first-boot-project/src/main/java/pack/Student.java" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../first-boot-project/src/main/resources/application.properties" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../first-boot-project/src/main/resources/templates/about.html" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../first-boot-project/src/test/java/com/first/FirstBootProjectApplicationTests.java" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../../~$ring notes.docx" beforeDir="false" afterPath="$PROJECT_DIR$/../../~$ring notes.docx" afterDir="false" />
+    </list>
+    <option name="SHOW_DIALOG" value="false" />
+    <option name="HIGHLIGHT_CONFLICTS" value="true" />
+    <option name="HIGHLIGHT_NON_ACTIVE_CHANGELIST" value="false" />
+    <option name="LAST_RESOLUTION" value="IGNORE" />
+  </component>
+  <component name="FileTemplateManagerImpl">
+    <option name="RECENT_TEMPLATES">
+      <list>
+        <option value="Class" />
+      </list>
+    </option>
+  </component>
+  <component name="Git.Settings">
+    <option name="RECENT_GIT_ROOT_PATH" value="$PROJECT_DIR$/../../.." />
+  </component>
+  <component name="NextEditCompletionFeaturesState">
+    <decayedCancelled>
+      <entry key="MS100" value="1.0" />
+      <entry key="MS500" value="1.0" />
+      <entry key="S2" value="1.0" />
+      <entry key="S5" value="1.0000000000000095" />
+      <entry key="S10" value="1.0000001483174377" />
+      <entry key="S30" value="1.0156984664208286" />
+      <entry key="S60" value="1.3209214673958058" />
+      <entry key="M2" value="2.48623266174142" />
+      <entry key="M5" value="4.758439225830268" />
+      <entry key="M10" value="6.180089167927623" />
+      <entry key="M15" value="7.284939732723409" />
+      <entry key="M30" value="15.312452679075099" />
+      <entry key="H1" value="40.80391202094986" />
+      <entry key="H2" value="79.50766291948537" />
+      <entry key="H4" value="115.85627029288344" />
+      <entry key="D1" value="162.24067360795297" />
+      <entry key="W1" value="172.2598112063327" />
+    </decayedCancelled>
+    <decayedSelected>
+      <entry key="MS100" value="0.0" />
+      <entry key="MS500" value="0.0" />
+      <entry key="S2" value="0.0" />
+      <entry key="S5" value="0.0" />
+      <entry key="S10" value="6.890057095485097E-255" />
+      <entry key="S30" value="1.9717884553065862E-85" />
+      <entry key="S60" value="5.501930147307343E-43" />
+      <entry key="M2" value="1.2709165765289258E-21" />
+      <entry key="M5" value="1.5180606744504693E-8" />
+      <entry key="M10" value="4.7268226097320326E-4" />
+      <entry key="M15" value="0.015596616793871192" />
+      <entry key="M30" value="0.5362422911310103" />
+      <entry key="H1" value="3.31078073756773" />
+      <entry key="H2" value="8.532837256519246" />
+      <entry key="H4" value="13.913354121517031" />
+      <entry key="D1" value="21.129096282349217" />
+      <entry key="W1" value="22.722282225685298" />
+    </decayedSelected>
+    <decayedShown>
+      <entry key="MS100" value="0.0647040577400861" />
+      <entry key="MS500" value="0.5783440919526437" />
+      <entry key="S2" value="0.8720604202809027" />
+      <entry key="S5" value="0.9467136312367234" />
+      <entry key="S10" value="0.9729922504825483" />
+      <entry key="S30" value="1.0066048147040232" />
+      <entry key="S60" value="1.3162714218507332" />
+      <entry key="M2" value="2.4837190253755526" />
+      <entry key="M5" value="4.757283935305025" />
+      <entry key="M10" value="6.179932774051606" />
+      <entry key="M15" value="7.300011384260164" />
+      <entry key="M30" value="15.847052052836956" />
+      <entry key="H1" value="44.11044155756305" />
+      <entry key="H2" value="88.03525658575552" />
+      <entry key="H4" value="129.76542513478432" />
+      <entry key="D1" value="183.36872144337426" />
+      <entry key="W1" value="194.9819327213171" />
+    </decayedShown>
+  </component>
+  <component name="ProjectColorInfo">{
+  &quot;associatedIndex&quot;: 5,
+  &quot;fromUser&quot;: false
+}</component>
+  <component name="ProjectId" id="3Ex5JOnZyK07l2rKnxZNXcmGaho" />
+  <component name="ProjectViewState">
+    <option name="hideEmptyMiddlePackages" value="true" />
+    <option name="showLibraryContents" value="true" />
+  </component>
+  <component name="PropertiesComponent">{
+  &quot;keyToString&quot;: {
+    &quot;Application.Main.executor&quot;: &quot;Run&quot;,
+    &quot;Application.com.core.concepts.Main.executor&quot;: &quot;Run&quot;,
+    &quot;Maven. [org.apache.maven.plugins:maven-archetype-plugin:RELEASE:generate].executor&quot;: &quot;Run&quot;,
+    &quot;ModuleVcsDetector.initialDetectionPerformed&quot;: &quot;true&quot;,
+    &quot;RunOnceActivity.ShowReadmeOnStart&quot;: &quot;true&quot;,
+    &quot;RunOnceActivity.git.unshallow&quot;: &quot;true&quot;,
+    &quot;RunOnceActivity.typescript.service.memoryLimit.init&quot;: &quot;true&quot;,
+    &quot;codeWithMe.voiceChat.enabledByDefault&quot;: &quot;false&quot;,
+    &quot;com.intellij.ml.llm.matterhorn.ej.ui.settings.DefaultModelSelectionForGA.v1&quot;: &quot;true&quot;,
+    &quot;git-widget-placeholder&quot;: &quot;main&quot;,
+    &quot;ignore.virus.scanning.warn.message&quot;: &quot;true&quot;,
+    &quot;junie.onboarding.icon.badge.shown&quot;: &quot;true&quot;,
+    &quot;kotlin-language-version-configured&quot;: &quot;true&quot;,
+    &quot;last_opened_file_path&quot;: &quot;E:/java/spring/first-boot-project/core-concepts&quot;,
+    &quot;node.js.detected.package.eslint&quot;: &quot;true&quot;,
+    &quot;node.js.detected.package.tslint&quot;: &quot;true&quot;,
+    &quot;node.js.selected.package.eslint&quot;: &quot;(autodetect)&quot;,
+    &quot;node.js.selected.package.tslint&quot;: &quot;(autodetect)&quot;,
+    &quot;nodejs_package_manager_path&quot;: &quot;npm&quot;,
+    &quot;to.speed.mode.migration.done&quot;: &quot;true&quot;,
+    &quot;vue.rearranger.settings.migration&quot;: &quot;true&quot;
+  }
+}</component>
+  <component name="RunManager" selected="Application.com.core.concepts.Main">
+    <configuration name="Main" type="Application" factoryName="Application" temporary="true" nameIsGenerated="true">
+      <option name="MAIN_CLASS_NAME" value="Main" />
+      <module name="core-concepts" />
+      <method v="2">
+        <option name="Make" enabled="true" />
+      </method>
+    </configuration>
+    <configuration name="com.core.concepts.Main" type="Application" factoryName="Application" temporary="true" nameIsGenerated="true">
+      <option name="MAIN_CLASS_NAME" value="com.core.concepts.Main" />
+      <module name="core-concepts" />
+      <extension name="coverage">
+        <pattern>
+          <option name="PATTERN" value="com.core.concepts.*" />
+          <option name="ENABLED" value="true" />
+        </pattern>
+      </extension>
+      <method v="2">
+        <option name="Make" enabled="true" />
+      </method>
+    </configuration>
+    <recent_temporary>
+      <list>
+        <item itemvalue="Application.com.core.concepts.Main" />
+        <item itemvalue="Application.Main" />
+      </list>
+    </recent_temporary>
+  </component>
+  <component name="SharedIndexes">
+    <attachedChunks>
+      <set>
+        <option value="bundled-jdk-30f59d01ecdd-37e91769500f-intellij.indexing.shared.core-IU-261.25134.95" />
+        <option value="bundled-js-predefined-d6986cc7102b-31caf2ab9e3c-JavaScript-IU-261.25134.95" />
+      </set>
+    </attachedChunks>
+  </component>
+  <component name="TaskManager">
+    <task active="true" id="Default" summary="Default task">
+      <changelist id="9c215ebc-a3b2-4d58-8e88-e0c5536f0b12" name="Changes" comment="" />
+      <created>1781107309927</created>
+      <option name="number" value="Default" />
+      <option name="presentableId" value="Default" />
+      <updated>1781107309927</updated>
+      <workItem from="1781107314085" duration="104000" />
+      <workItem from="1781107613887" duration="23000" />
+      <workItem from="1781107663821" duration="28000" />
+      <workItem from="1781107845943" duration="9452000" />
+      <workItem from="1781172555750" duration="984000" />
+    </task>
+    <servers />
+  </component>
+  <component name="TypeScriptGeneratedFilesManager">
+    <option name="version" value="3" />
+  </component>
+  <component name="com.intellij.coverage.CoverageDataManagerImpl">
+    <SUITE FILE_PATH="coverage/core_concepts$Main.ic" NAME="Main Coverage Results" MODIFIED="1781108707707" SOURCE_PROVIDER="com.intellij.coverage.DefaultCoverageFileProvider" RUNNER="idea" COVERAGE_BY_TEST_ENABLED="false" COVERAGE_TRACING_ENABLED="true" />
+  </component>
+</project>

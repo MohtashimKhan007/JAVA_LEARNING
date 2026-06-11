@@ -12,7 +12,7 @@ public class Main {
         ApplicationContext context = new ClassPathXmlApplicationContext("config.xml");
         // here we are saying that read config.xml file and set everything acc to it
         // 2. Spring se 'car' ka object mang rahe hain (jo usne XML ke hisab se banaya hai)
-        car myCar = (car) context.getBean("car");
+        Car myCar = (Car) context.getBean("car");
 
         // 3. Ab car ko start karo
         myCar.start();
