@@ -1,10 +1,14 @@
 package com.core.concepts;
 
-public class Car {
+import org.springframework.beans.factory.DisposableBean;
+import org.springframework.beans.factory.InitializingBean;
+import org.springframework.stereotype.Component;
+
+@Component("car")
+public class Car implements InitializingBean,DisposableBean {
     private Engine e;
 
-    // Galat: public class getengine() { ... }
-    // Sahi: ye ek 'method' hai, 'class' nahi.
+
     public Engine getEngine() {
         return e;
     }
@@ -17,4 +21,17 @@ public class Car {
         e.startEngine();
         System.out.println("Car started");
     }
+
+    @Override
+    public void afterPropertiesSet() throws Exception {
+        System.out.println("We are in in after property set ");
+
+    }
+    @Override
+    public void destroy() throws Exception {
+        System.err.println("Destroy method is being called"); // System.err use karein (Red color mein dikhega)
+        System.out.flush();
+    }
+
+
 }
