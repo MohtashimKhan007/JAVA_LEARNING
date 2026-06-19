@@ -1,9 +1,10 @@
 package com.jpa.example.course_jpa_example.entity;
 
-import jakarta.persistence.Column;
-import jakarta.persistence.Entity;
-import jakarta.persistence.Id;
-import jakarta.persistence.Table;
+import jakarta.persistence.*;
+import org.apache.logging.log4j.util.Cast;
+
+import java.util.ArrayList;
+import java.util.List;
 
 @Entity
 @Table(name="jpa_user")
@@ -13,12 +14,25 @@ public class User {
     private int userId;
     @Column(name = "jpa_user_name",nullable = false)
     private String name;
-
-
     private String email;
 
     private int age;
     private boolean isActive;
+
+    //    Laptop
+//    @OneToOne(mappedBy = "user",cascade = CascadeType.ALL)
+//    private Laptop laptop;
+
+//    public Laptop getLaptop() {
+//        return laptop;
+//    }
+//
+//    public void setLaptop(Laptop laptop) {
+//        this.laptop = laptop;
+//    }
+    // cascadeType.all user save kru to laptop automaticalay save hojaye
+    @OneToMany(mappedBy = "user",cascade = CascadeType.ALL)
+    private List<Laptop> Laptops = new ArrayList<>();
 
     public int getUserId() {
         return userId;
@@ -54,6 +68,14 @@ public class User {
 
     public boolean isActive() {
         return isActive;
+    }
+
+    public List<Laptop> getLaptops() {
+        return Laptops;
+    }
+
+    public void setLaptops(List<Laptop> laptops) {
+        Laptops = laptops;
     }
 
     public void setActive(boolean active) {
