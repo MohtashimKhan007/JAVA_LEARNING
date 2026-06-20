@@ -1,0 +1,20 @@
+<!DOCTYPE html>
+<!--thymleaf namespace -->
+<html lang="en"  xmlns="http://www.w3.org/1999/xhtml"
+      xmlns:th="http://www.thymeleaf.org">
+
+<head>
+    <meta charset="UTF-8">
+    <title>Admin</title>
+</head>
+<body>
+<h1 th:text="${title}"></h1>
+<h1>Welcome to the Admin Page</h1>
+<h2>This is admin page Created by the Developer</h2>
+<button>Click me</button>
+<a href="/page/home">Go to Home</a>
+<ul th:each="user:${userList}">
+    <li th:text="${user}"> </li>
+</ul>
+</body>
+</html>
