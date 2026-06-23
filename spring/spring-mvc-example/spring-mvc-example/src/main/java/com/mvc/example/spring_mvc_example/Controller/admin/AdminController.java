@@ -12,6 +12,7 @@ import java.util.List;
 @RequestMapping("/admin")
 public class AdminController {
     @RequestMapping("/home")
+
     public String adminHome(Model model){
 
         // if we want to take this title and userList to the view(admin/home) so we use Model here
