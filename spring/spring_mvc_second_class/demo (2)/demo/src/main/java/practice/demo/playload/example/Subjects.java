@@ -1,4 +1,4 @@
-package practice.demo.playload;
+package practice.demo.playload.example;
 
 public class Subjects {
     private String title;

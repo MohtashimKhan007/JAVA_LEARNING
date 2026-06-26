@@ -1,12 +1,10 @@
 package practice.demo.controller;
 
-import jakarta.websocket.server.PathParam;
 import org.springframework.web.bind.annotation.*;
-import practice.demo.entity.User;
-import practice.demo.playload.Department;
-import practice.demo.playload.DummyDataGenerator;
-import practice.demo.playload.Student;
-import practice.demo.playload.Subjects;
+import practice.demo.playload.example.Department;
+import practice.demo.playload.example.DummyDataGenerator;
+import practice.demo.playload.example.Student;
+import practice.demo.playload.example.Subjects;
 
 import java.util.ArrayList;
 import java.util.List;

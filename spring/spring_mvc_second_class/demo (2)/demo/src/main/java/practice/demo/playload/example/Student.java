@@ -1,4 +1,4 @@
-package practice.demo.playload;
+package practice.demo.playload.example;
 
 import org.springframework.web.bind.annotation.RestController;
 
