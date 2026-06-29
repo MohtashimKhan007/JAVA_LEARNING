@@ -3,6 +3,7 @@ package practice.demo.controller.example;
 import jakarta.validation.Valid;
 import org.slf4j.Logger;
 import org.slf4j.LoggerFactory;
+import org.springframework.web.bind.MethodArgumentNotValidException;
 import org.springframework.web.bind.annotation.*;
 import practice.demo.playload.example.LoginRequest;
 import practice.demo.playload.example.UserData;
@@ -28,6 +29,8 @@ public class AuthController {
 
     @GetMapping("/login")
     public LoginRequest login(@RequestBody LoginRequest loginRequest){
+        String test = null; // making null so to check nullpointer exception
+        test.length();
         logger.info("loginRequest: {}",loginRequest);
         return loginRequest;
 
@@ -56,7 +59,7 @@ public class AuthController {
 
 //        System.out.println(userData.); // so we will not this we use logger how lets see
 
-        logger.info("user name: {}", userData.getName());
+        logger.info("name: {}", userData.getName());
         // this will take the value of Get name from the userData and put inside placeholder
         logger.info("age, {}", userData.getAge());
         logger.info("email: {}", userData.getEmail());
@@ -64,10 +67,32 @@ public class AuthController {
         //printing the value of the agent
         logger.info("user-agent:{}",agent);
 
+
         // Now here we Got the data as input on console we print we got the data
         return "We Got the Data";
 
     }
+
+    //Exception handling method
+//   @ExceptionHandler(NullPointerException.class)
+//    public String handleNullPointerException(NullPointerException ex){
+//        logger.error(ex.getMessage());
+//        ex.printStackTrace();
+//
+//        return ex.getMessage();
+//    }
+//
+//
+//    // This exception is for Method Argument Not valid exception
+//    @ExceptionHandler(MethodArgumentNotValidException.class)
+//    public String handleMethodArgumentNotValidException(MethodArgumentNotValidException ex){
+//        logger.error(ex.getMessage());
+//        ex.printStackTrace();
+//
+//        return "Your Input Data Not Valid";
+//    }
+
+    // Commented these exception because we are going to use these exception in the exception folder for global use
 
 
 
