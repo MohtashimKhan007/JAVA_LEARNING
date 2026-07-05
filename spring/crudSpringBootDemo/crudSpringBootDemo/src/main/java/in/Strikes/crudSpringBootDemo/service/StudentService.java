@@ -31,13 +31,15 @@ public class StudentService {
         // calling saveStudent method of the student Repository
         // here we have called the save method that is inside the jpa repository . we don't need to
         // overwrite that all the things is being done by jpa during runtime
+        studentReq.setDeleted(false);
        Student studentRes =  studentRepository.save(studentReq);
 
        return studentRes;
 
     }
     public Student getStudent(Long id){
-        Optional<Student> studentResp = studentRepository.findById(id);
+        // magic happen we just give the name as findByIdAndDeletedFalse and declare this in student Repository it will automatically implement it internally
+        Optional<Student> studentResp = studentRepository.findByIdAndDeletedFalse(id);
         if(studentResp.isPresent()){
             return studentResp.get();
         }
@@ -45,23 +47,22 @@ public class StudentService {
 
     }
 
-    // get al student method
+    // get al student method and we have also used the soft delete by just giving name like this and declaring in the student Repository
     public List<Student> getAllStudent(){
-        List<Student> studentList = studentRepository.findAll();
+        List<Student> studentList = studentRepository.findByDeletedIsFalse();
         return studentList;
     }
 
     // update student -> here we get id to check if that exist or not and the body
     public Student updateStudent(  Long id,Student studentReq){
-        Optional<Student> existingStudent = studentRepository.findById(id);
+        Optional<Student> existingStudent = studentRepository.findByIdAndDeletedFalse(id);
         Student studentToSave = existingStudent.get();
         studentToSave.setName(studentReq.getName());
         studentToSave.setRollNo(studentReq.getRollNo());
         studentToSave.setSubject(studentReq.getSubject());
         studentToSave.setEmail((studentReq.getEmail()));
         studentToSave.setAge(studentReq.getAge());
-
-
+         studentToSave.setDeleted(false);
          return studentRepository.save(studentToSave);
 
 
@@ -74,6 +75,21 @@ public class StudentService {
       if(!isStudent) return false;
       studentRepository.deleteById(id);
       return true;
+    }
+
+     // soft delete
+    public boolean deleteStudentSoftly(Long id){
+        // get the record
+        Optional<Student> existingStudent = studentRepository.findByIdAndDeletedFalse(id);
+        if(existingStudent.isEmpty()){
+            return false;
+        }
+        Student studentToSave = existingStudent.get();
+        studentToSave.setDeleted(true);
+        studentRepository.save(studentToSave);
+        return true;
+        // set is deleted as 1
+        //save
     }
 
 
