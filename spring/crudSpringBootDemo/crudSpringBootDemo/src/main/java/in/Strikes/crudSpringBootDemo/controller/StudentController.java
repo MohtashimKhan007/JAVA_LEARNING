@@ -27,7 +27,7 @@ public class StudentController {
     public StudentController(StudentService studentService){
         this.studentService = studentService;
     }
-    @PostMapping("/create")
+    @PostMapping
     // if we have to send our own response code  by default ok so we use the Response Entity instead of student in return type
     public ResponseEntity<CreateStudentResponseDto> createStudent(
             @Valid
@@ -40,8 +40,8 @@ public class StudentController {
     }
 
     //read one Student
-    @GetMapping("/get")
-    public ResponseEntity<CreateStudentResponseDto> getStudent(@RequestParam Long id){
+    @GetMapping("/{id}")
+    public ResponseEntity<CreateStudentResponseDto> getStudent(@PathVariable Long id){
         CreateStudentResponseDto studentResp = studentService.getStudent(id);
         if(studentResp==null){
 //            return ResponseEntity.status(HttpStatus.NOT_FOUND).body(null);
@@ -53,7 +53,7 @@ public class StudentController {
     }
     // get all students
 
-    @GetMapping("/getAll")
+    @GetMapping
     public ResponseEntity<List<CreateStudentResponseDto>> getAllStudent(){
         List<CreateStudentResponseDto> studentList = studentService.getAllStudent();
         if(studentList.isEmpty()){
@@ -67,8 +67,10 @@ public class StudentController {
 
     //update
 
-
-    @PutMapping("/update")
+   // this is not a good way that we are giving the path by writing/ we have to remove this so
+    // what we do we just remove / update from @putmapping("/update") if any putMapping request came
+    // then automatically this will be called
+    @PutMapping
     public ResponseEntity<UpdateStudentResponseDto> updateStudent(@RequestParam Long id,@RequestBody UpdateStudentRequestDto studentReq){
         UpdateStudentResponseDto studentResp = studentService.updateStudent(id,studentReq);
         if(studentResp==null){
@@ -82,7 +84,7 @@ public class StudentController {
 
     //Delete
 
-    @DeleteMapping("/delete")
+    @DeleteMapping
     public ResponseEntity<String> deleteStudent(@RequestParam Long id){
        Boolean isDeleted =  studentService.deleteStudent(id);
        if(!isDeleted){

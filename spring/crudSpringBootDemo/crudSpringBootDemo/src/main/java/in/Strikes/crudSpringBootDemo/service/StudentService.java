@@ -5,6 +5,7 @@ import in.Strikes.crudSpringBootDemo.dto.CreateStudentResponseDto;
 import in.Strikes.crudSpringBootDemo.dto.UpdateStudentRequestDto;
 import in.Strikes.crudSpringBootDemo.dto.UpdateStudentResponseDto;
 import in.Strikes.crudSpringBootDemo.entity.Student;
+import in.Strikes.crudSpringBootDemo.exception.ResourceNotFoundException;
 import in.Strikes.crudSpringBootDemo.repository.StudentRepository;
 import org.springframework.stereotype.Service;
 
@@ -52,12 +53,37 @@ public class StudentService {
     }
     public CreateStudentResponseDto getStudent(Long id){
         // magic happen we just give the name as findByIdAndDeletedFalse and declare this in student Repository it will automatically implement it internally
-        Optional<Student> studentResp = studentRepository.findById(id);
-        if(studentResp.isPresent()){
-            return mapToDto(studentResp.get());
-        }
-        return null;
 
+       // we will not do like this we can generally make the obj of student and use or else method
+//        Optional<Student> studentResp = studentRepository.findById(id);
+        // we will not handle the exception like this we will handle this in global exception class
+//        if(studentResp.isPresent()){
+//            return mapToDto(studentResp.get());
+//        }
+//        return null;
+          // this is returning the value of optional type means there can or cannot be a value
+        // suppose if there is no value so this will give the exception -> no such element
+        // compiler will check will the current method is handling that
+        // here no so it will propagate to its parent
+        // and this method getStudent is called by student Controller
+        // but there is no method inside the student controller to handle this exception so this exception will go to the client
+        // and that exception will be in proper format because spring boot has default exceptional handling method
+        // before going this exception from the controller to the client spring mvc will do this
+
+//        return mapToDto(studentResp.get());
+
+        // we will do like this ->
+//        Student studentResp = studentRepository
+//                .findById(id)
+//                .orElse(null); // we will not return null we will return   resource not found exception for that we have to create the class resource not found
+//
+
+        // wo we will do like this ->
+        Student studentResp = studentRepository
+                .findById(id)
+                .orElseThrow(()-> new ResourceNotFoundException("Student with id " + id + " not found"));
+        // here if we do map toDto(studentResp) this will call runtime exception if the value is null and that will be handled by the runtime exception  -> the global exception class
+        return mapToDto(studentResp);
     }
 
     // get al student method and we have also used the soft delete by just giving name like this and declaring in the student Repository
