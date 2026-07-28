@@ -3,6 +3,7 @@ package in.strikes.filterDemo.dto;
 public class Student {
     private long id;
     private String name;
+    private String mail;
 
     public long getId() {
         return id;
@@ -28,5 +29,5 @@ public class Student {
         this.mail = mail;
     }
 
-    private String mail;
+
 }

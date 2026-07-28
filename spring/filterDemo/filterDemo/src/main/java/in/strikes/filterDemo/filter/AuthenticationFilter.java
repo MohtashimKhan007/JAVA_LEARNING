@@ -8,7 +8,7 @@ import org.springframework.core.annotation.Order;
 import org.springframework.stereotype.Component;
 
 import java.io.IOException;
-@Component
+//@Component
 @Order(1)
 public class AuthenticationFilter implements Filter {
     @Override
@@ -26,6 +26,14 @@ public class AuthenticationFilter implements Filter {
         if(token==null || !token.equals("12345")){
          // means token nhi mil paya
             httpResponse.setStatus(HttpServletResponse.SC_UNAUTHORIZED);
+            // adding a header in response
+            httpResponse.setContentType("application/json");
+            //we can also return a body along with the header
+            httpResponse.getWriter().write(
+                    "{\n" +
+                            "    \"message\": \"Authentication is Required\"\n" +
+                            "}"
+            );
             return;
         }
 
