@@ -18,10 +18,10 @@ public class LoggingAspect {
 //
 //    }
 
-    @Before("@within(org.springframework.stereotype.Service)")
-    public void logBeforeMethod(){
-        System.out.println("Method Intercepted");
-    }
+//    @Before("@within(org.springframework.stereotype.Service)")
+//    public void logBeforeMethod(){
+//        System.out.println("Method Intercepted");
+//    }
 
 
 //    @Before("execution(AopSecondClass.Aop_2.dto.Student" +
@@ -32,5 +32,10 @@ public class LoggingAspect {
 //        return student;
 //
 //    }
+
+    @Before("this(AopSecondClass.Aop_2.Service.StudentService)")
+    public void logBeforeMethod4(){
+        System.out.println("Method Intercepted");
+    }
 
 }
