@@ -1,0 +1,4 @@
+-------------------------------------------------------------------------------
+Test set: in.strikes.springTestingDemo.controller.ProductControllerTest
+-------------------------------------------------------------------------------
+Tests run: 1, Failures: 0, Errors: 0, Skipped: 0, Time elapsed: 3.956 s -- in in.strikes.springTestingDemo.controller.ProductControllerTest
